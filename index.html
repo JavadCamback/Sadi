@@ -84,25 +84,28 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
         }
         
-        
-        footer {
-            text-align: center;
-            padding: 5px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
+        .info-button {
             position: fixed;
-            bottom: 0;
-            width: 100%;
-            font-size: 12px;
+            top: 10px;
+            left: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 1; /* اطمینان از اینکه دکمه بالای تمام محتوا نمایش داده می‌شود */
         }
-        footer a {
+        .info-button a {
+            color: #fff;
             text-decoration: none;
-            color: #ffc107;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        footer a:hover {
-            color: #fd7e14;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -119,6 +122,7 @@
 </head>
 <body>
     <h1>سایت سالن های سعدی</h1>
+    <button class="info-button"><a href="https://serverqp.github.io/EnterAi/" target="_blank">i</a></button> <!-- دکمه کوچک با عنوان i -->
     <div class="container">
         <div class="sidebar">
 <div class="week-list">
@@ -132,33 +136,33 @@
                 <h2>1403/9/28 چهارشنبه</h2>
                 <p>سالن راه آهن ساعت 12 تا 13:30 با حضور آقای عامل🗿</p>
                 <div class="photos">
-                    <img src="https://raw.githubusercontent.com/JavadCamback/Sadi/main/photo16060994075.jpg" alt="عکس 1">
-                    <img src="https://raw.githubusercontent.com/JavadCamback/Sadi/main/photo16060839073.jpg" alt="عکس 2">
-                    <img src="https://raw.githubusercontent.com/JavadCamback/Sadi/main/photo16060838416.jpg" alt="عکس 3">
+                    <img src="https://raw.githubusercontent.com/JavadCamback/Sadi/main/photo16060994075.jpg" alt="ساماندهی محتوا ۱">
+                    <img src="https://raw.githubusercontent.com/JavadCamback/Sadi/main/photo16060839073.jpg" alt="ساماندهی محتوا ۲">
+                    <img src="https://raw.githubusercontent.com/JavadCamback/Sadi/main/photo16060838416.jpg" alt="ساماندهی محتوا ۳">
                 </div>
             </div>
             <div id="week2" class="week-content" style="display: none;">
                 <h2>1403/10/4 سه شنبه</h2>
                 <p>سالن راه آهن ساعت 10:30 تا 12</p>
                 <div class="photos">
-                    <img src="https://raw.githubusercontent.com/JavadCamback/Sadi/main/photo16060426129.jpg" alt="عکس 4">
-                    <img src="https://raw.githubusercontent.com/JavadCamback/Sadi/main/photo16060426866.jpg" alt="عکس 5">
-                    <img src="https://raw.githubusercontent.com/JavadCamback/Sadi/main/photo16060426520.jpg" alt="عکس 6">
+                    <img src="https://raw.githubusercontent.com/JavadCamback/Sadi/main/photo16060426129.jpg" alt="ساماندهی محتوا ۴">
+                    <img src="https://raw.githubusercontent.com/JavadCamback/Sadi/main/photo16060426866.jpg" alt="ساماندهی محتوا ۵">
+                    <img src="https://raw.githubusercontent.com/JavadCamback/Sadi/main/photo16060426520.jpg" alt="ساماندهی محتوا ۶">
                 </div>
             </div>
             <div id="week3" class="week-content" style="display: none;">
                 <h2>1403/10/11 سه شنبه</h2>
                 <p>سالن شهید کوشه ای ساعت 12 تا 2 (منتظر ارسال تصاویر😠)</p>
                 <div class="photos">
-                    <img src="https://via.placeholder.com/150" alt="عکس 7">
-                    <img src="https://via.placeholder.com/150" alt="عکس 8">
-                    <img src="https://via.placeholder.com/150" alt="عکس 9">
+                    <img src="https://via.placeholder.com/150" alt="ساماندهی محتوا ۷">
+                    <img src="https://via.placeholder.com/150" alt="ساماندهی محتوا ۸">
+                    <img src="https://via.placeholder.com/150" alt="ساماندهی محتوا ۹">
                 </div>
             </div>
         </div>
     </div>
     <footer>
-        ساخته شده توسط <a href="https://serverqp.github.io/EnterAi" target="_blank">محمدجواد جاودانفرد</a>  👉کلیک کنید
+
    </footer>
     <script>
         function showWeek(weekId) {
